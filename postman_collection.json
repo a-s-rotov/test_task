@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "dfd690c6-5b0a-452c-81db-7454c4569277",
+		"name": "Test task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6675460"
+	},
+	"item": [
+		{
+			"name": "Upload file",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "ZVKnR4kKyGXmaCyU28omi9yVG2VHEKQJ8gaVObKQlA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Anton_Rotov/Documents/test.xml"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/deviceInfo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deviceInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find by params",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
